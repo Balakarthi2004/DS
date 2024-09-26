@@ -1,0 +1,22 @@
+#include<stdio.h>
+typedef struct student{
+    long phno;
+    char name[25];
+    char usn[10];
+}student;
+int main(){
+    student s[100];
+    int i,n;
+    printf("Enter the number of student\n");
+    scanf("%d" , &n);
+    for(i=0;i<n;i++){
+    printf("Enter the student name , USN and mobile number for &d student\n",1+1);
+    scanf("%s %s %ld", s[i].name,s[i].usn,&s[i].phno);
+}
+for(i=0;i<n;i++){
+    printf("The student name , USN and phone number for %d for studentare\n",1+1);
+    printf("%s\t%s\t%ld\n",s[i].name,s[i].usn,s[i].phno);
+}
+
+  return 0;
+}
